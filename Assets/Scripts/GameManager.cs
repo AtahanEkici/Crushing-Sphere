@@ -49,6 +49,10 @@ public class GameManager : MonoBehaviour
             Time.timeScale = 1;
         }
     }
+    public static void PravicyPolicy()
+    {
+        Application.OpenURL("https://sites.google.com/view/crushing-sphere-pravicy-policy/ana-sayfa");
+    }
     public void Start_Game()
     {
         Time.timeScale = 1;
