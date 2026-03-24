@@ -1,6 +1,8 @@
+using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UIElements;
 
 public class GameManager : MonoBehaviour
 {
@@ -31,7 +33,7 @@ public class GameManager : MonoBehaviour
     }
     void Start()
     {
-        Application.targetFrameRate = (int)Screen.currentResolution.refreshRateRatio.value;
+        Application.targetFrameRate = int.Parse(Screen.currentResolution.refreshRateRatio.ToString());
 
         if(PlayerPrefs.GetInt("Play_Button") == 1)
         {
