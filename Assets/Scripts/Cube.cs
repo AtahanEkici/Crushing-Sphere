@@ -4,7 +4,7 @@ using System.Collections.Generic;
 public class Cube : MonoBehaviour
 {
     public Color color;
-    public PhysicMaterial targetmaterial;
+    public PhysicsMaterial targetmaterial;
 
     private PlayerController player;
     private int ChildCount;

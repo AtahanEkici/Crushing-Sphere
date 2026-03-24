@@ -31,7 +31,7 @@ public class GameManager : MonoBehaviour
     }
     void Start()
     {
-        Application.targetFrameRate = Screen.currentResolution.refreshRate;
+        Application.targetFrameRate = (int)Screen.currentResolution.refreshRateRatio.value;
 
         if(PlayerPrefs.GetInt("Play_Button") == 1)
         {
